@@ -6,6 +6,8 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
   <link rel="stylesheet" href="dist/style.css">
   <link rel="stylesheet" href="dist/fonts.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
   <script src="https://api-maps.yandex.ru/2.1/?apikey=088d81c4-afe1-4947-8fd5-9d7c48766097&lang=ru_RU" type="text/javascript">
   </script>
 </head>
@@ -49,6 +51,7 @@
         <div class="hero__pillow hero__background-image"></div>
         <div class="hero__background hero__background-image"></div>
         <div class="hero__boxes hero__background-image"></div>
+        <div class="hero__boxes2 hero__background-image"></div>
         <div class="hero__bucket hero__background-image"></div>
         <div class="hero__box1 hero__background-image"></div>
         <div class="hero__box2 hero__background-image"></div>
@@ -101,24 +104,33 @@
     </section>
 
     <section class="categories">
-      <div class="categories__title">Что можно заказать?</div>
+      <div class="categories__container">
+        <div class="categories__title">Что можно заказать?</div>
 
-      <div class="categories__list">
-        <div class="categories__item categories__item-1"></div>
-        <div class="categories__item categories__item-2"></div>
-        <div class="categories__item categories__item-3"></div>
-        <div class="categories__item categories__item-4"></div>
-        <div class="categories__item categories__item-5"></div>
-        <div class="categories__item categories__item-6"></div>
-        <div class="categories__item categories__item-7"></div>
-        <div class="categories__item categories__item-8"></div>
-        <div class="categories__item categories__item-9"></div>
-        <div class="categories__item categories__item-10"></div>
+        <div class="categories__list">
+          <div class="categories__item categories__item-1">Канцтовары</div>
+          <div class="categories__item categories__item-2">Детские  товары</div>
+          <div class="categories__item categories__item-3">Выгодные <span>цены</span> и специальные <span>скидки</span> </div>
+          <div class="categories__item categories__item-4">Посуда</div>
+          <div class="categories__item categories__item-5">Для сада и огорода</div>
+          <div class="categories__item categories__item-6">Косметика и бытовая  химия</div>
+          <div class="categories__item categories__item-7">Отличные <span>сезонные предложения</span></div>
+          <div class="categories__item categories__item-8">Тысячи товаров известных брендов</div>
+          <div class="categories__item categories__item-9">
+            <span>Скидки</span>
+            <span>до</span>
+            <span>70%</span>
+          </div>
+          <div class="categories__item categories__item-10">Быстрая доставка</div>
+        </div>
       </div>
+
+      <div class="categories__background-towel"></div>
+      <div class="categories__background-cube"></div>
     </section>
 
     <section class="shops" id="shops">
-      <div class="container">
+      <div class="shops__container">
         <div class="shops__title">
           Выбирай магазины и заказывай
           товары по низким ценам
@@ -138,7 +150,7 @@
               </div>
               <div class="shops__category shops__category-2" >
                 <div class="shops__category-name">
-                  Товары для праздника
+                  <span>Товары</span>  для праздника
                 </div>
               </div>
               <div class="shops__category shops__category-3" >
@@ -238,30 +250,53 @@
             </a>
           </div>
         </div>
+
+        <div class="shops__background-boxes"></div>
+        <div class="shops__background-box1"></div>
+        <div class="shops__background-box2"></div>
+        <div class="shops__background-box3"></div>
+        <div class="shops__background-light"></div>
+        <div class="shops__background-hand"></div>
+        <div class="shops__background-lamp"></div>
+        <div class="shops__background-flower"></div>
       </div>
     </section >
 
     <section class="contacts">
-      <h2 class="contacts__title">
-        География доставок
-      </h2>
 
-      <div class="contacts__select">
-        <div class="contacts__select-title">Выбрать пункт выдачи</div>
-        <div class="contacts__select-list">
-          <div class="contacts__select-item">
-            Item 1
-          </div>
-          <div class="contacts__select-item">
-            Item 2
-          </div>
-          <div class="contacts__select-item">
-            Item 3
+      <div class="contacts__container">
+        <h2 class="contacts__title">
+          География доставок
+        </h2>
+
+        <div class="contacts__select">
+          <div class="contacts__select-title">Выбрать пункт выдачи</div>
+          <div class="contacts__select-list">
+            <div class="contacts__select-item">
+              Магнитогорск
+            </div>
+            <div class="contacts__select-item">
+              Аскаровов
+            </div>
+            <div class="contacts__select-item">
+              Учалы
+            </div>
+            <div class="contacts__select-item">
+              Белорецк
+            </div>
           </div>
         </div>
-      </div>
-      <div class="contacts__map" id="contacts__map">
+        <div class="contacts__map" id="contacts__map">
 
+          <div class="contacts__background-kettle"></div>
+          <div class="contacts__background-clock"></div>
+          <div class="contacts__background-green1 contacts__background-green"></div>
+          <div class="contacts__background-green2 contacts__background-green"></div>
+          <div class="contacts__background-green3 contacts__background-green"></div>
+          <div class="contacts__background-green4 contacts__background-green"></div>
+          <div class="contacts__background-green5 contacts__background-green"></div>
+          <div class="contacts__background-green6 contacts__background-green"></div>
+      </div>
       </div>
     </section>
 
@@ -280,6 +315,11 @@
             Узнать подробнее
           </div>
         </div>
+
+        <div class="partners__background"></div>
+        <div class="partners__background-boxes"></div>
+        <div class="partners__background-family"></div>
+        <div class="partners__background-logo"></div>
       </div>
 
     </section>
@@ -289,9 +329,10 @@
     <div class="footer__container">
       <div class="footer__links">
         <a href="/" class="footer__link">Главная</a>
-        <a href="/" class="footer__link">Каталог товаров</a>
         <a href="/" class="footer__link">Магазины</a>
         <a href="/" class="footer__link">Доставка</a>
+        <a href="/" class="footer__link"><span>Бизнес</span> - поставщикам</a>
+        <a href="/" class="footer__link"><span>Бизнес</span> ПВЗ</a>
       </div>
 
       <div class="footer__contacts">
