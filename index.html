@@ -2,7 +2,10 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Title</title>
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
   <link rel="stylesheet" href="dist/style.css">
   <link rel="stylesheet" href="dist/fonts.css">
@@ -23,9 +26,15 @@
       
       <div class="header__items">
         <a href="#shops" class="header__item header__link">Магазины</a>
-        <a href="#" class="header__item header__link">Пункты выдачи</a>
-        <a href="#" class="header__item header__link">Партнёрство</a>
+        <a href="#contacts" class="header__item header__link">Пункты выдачи</a>
+        <a href="#partners" class="header__item header__link">Партнёрство</a>
         <a href="tel:+7351933-02-03" class="header__item">+7 (3519) 33-02-03</a>
+      </div>
+
+      <div class="header__burger">
+        <span></span>
+        <span></span>
+        <span></span>
       </div>
     </div>
   </header>
@@ -123,225 +132,230 @@
           </div>
           <div class="categories__item categories__item-10">Быстрая доставка</div>
         </div>
-      </div>
 
-      <div class="categories__background-towel"></div>
-      <div class="categories__background-cube"></div>
-    </section>
-
-    <section class="shops" id="shops">
-      <div class="shops__container">
-        <div class="shops__title">
-          Выбирай магазины и заказывай
-          товары по низким ценам
-        </div>
-
-        <div class="shops__list">
-          <div class="shops__item sima-mag">
-            <a href="/" class="shops__item-title">
-              Sima-mag.ru
-            </a>
-
-            <div class="shops__categories">
-              <div class="shops__category shops__category-1" >
-                <div class="shops__category-name">
-                  Детские товары
-                </div>
-              </div>
-              <div class="shops__category shops__category-2" >
-                <div class="shops__category-name">
-                  <span>Товары</span>  для праздника
-                </div>
-              </div>
-              <div class="shops__category shops__category-3" >
-                <div class="shops__category-name">
-                  Посуда
-                </div>
-              </div>
-              <div class="shops__category shops__category-4" >
-                <div class="shops__category-name">
-                  Текстиль
-                </div>
-              </div>
-              <div class="shops__category shops__category-5" >
-                <div class="shops__category-name">
-                  Творчество и хобби
-                </div>
-              </div>
-            </div>
-
-            <a href="/" class="shops__item-link">
-              Переход в магазин
-            </a>
-          </div>
-
-          <div class="shops__item gala-mag">
-            <a href="/" class="shops__item-title">
-              Гала-маг
-            </a>
-
-            <div class="shops__categories">
-              <div class="shops__category shops__category-1" >
-                <div class="shops__category-name">
-                  Бытовая техника
-                </div>
-              </div>
-              <div class="shops__category shops__category-2" >
-                <div class="shops__category-name">
-                  Посуда
-                </div>
-              </div>
-              <div class="shops__category shops__category-3" >
-                <div class="shops__category-name">
-                  Инструменты
-                </div>
-              </div>
-              <div class="shops__category shops__category-4" >
-                <div class="shops__category-name">
-                  Авто
-                </div>
-              </div>
-              <div class="shops__category shops__category-5" >
-                <div class="shops__category-name">
-                  Спорт и отдых
-                </div>
-              </div>
-            </div>
-            <a href="/" class="shops__item-link">
-              Переход в магазин
-            </a>
-          </div>
-
-          <div class="shops__item nazelenom">
-            <div class="shops__item-title">
-              <img class="shops__item-logo" src="./dist/images/shops/nazelenom.png" alt="nazelenom.ru">
-            </div>
-
-            <div class="shops__categories">
-              <div class="shops__category shops__category-1" >
-                <div class="shops__category-name">
-                  Бытовая химия
-                </div>
-              </div>
-              <div class="shops__category shops__category-2" >
-                <div class="shops__category-name">
-                  Красота и гигиена
-
-                </div>
-              </div>
-              <div class="shops__category shops__category-3" >
-                <div class="shops__category-name">
-                  Канцелярские товары
-                </div>
-              </div>
-              <div class="shops__category shops__category-4" >
-                <div class="shops__category-name">
-                  Сад и огород
-                </div>
-              </div>
-              <div class="shops__category shops__category-5" >
-                <div class="shops__category-name">
-                  Посуда
-                </div>
-              </div>
-            </div>
-            <a href="/" class="shops__item-link">
-              Переход в магазин
-            </a>
-          </div>
-        </div>
-
-        <div class="shops__background-boxes"></div>
-        <div class="shops__background-box1"></div>
-        <div class="shops__background-box2"></div>
-        <div class="shops__background-box3"></div>
-        <div class="shops__background-light"></div>
-        <div class="shops__background-hand"></div>
-        <div class="shops__background-lamp"></div>
-        <div class="shops__background-flower"></div>
-      </div>
-    </section >
-
-    <section class="contacts">
-
-      <div class="contacts__container">
-        <h2 class="contacts__title">
-          География доставок
-        </h2>
-
-        <div class="contacts__select">
-          <div class="contacts__select-title">Выбрать пункт выдачи</div>
-          <div class="contacts__select-list">
-            <div class="contacts__select-item">
-              Магнитогорск
-            </div>
-            <div class="contacts__select-item">
-              Аскаровов
-            </div>
-            <div class="contacts__select-item">
-              Учалы
-            </div>
-            <div class="contacts__select-item">
-              Белорецк
-            </div>
-          </div>
-        </div>
-        <div class="contacts__map" id="contacts__map">
-
-          <div class="contacts__background-kettle"></div>
-          <div class="contacts__background-clock"></div>
-          <div class="contacts__background-green1 contacts__background-green"></div>
-          <div class="contacts__background-green2 contacts__background-green"></div>
-          <div class="contacts__background-green3 contacts__background-green"></div>
-          <div class="contacts__background-green4 contacts__background-green"></div>
-          <div class="contacts__background-green5 contacts__background-green"></div>
-          <div class="contacts__background-green6 contacts__background-green"></div>
-      </div>
+        <div class="categories__background-towel"></div>
+        <div class="categories__background-cube"></div>
       </div>
     </section>
 
-    <section class="partners">
-      <div class="partners__container">
-        <div class="partners__title">Стань партнёром</div>
-        <div class="partners__description">
-          Открывай пункты выдачи заказов
-          и зарабанывай вместе с нами
-        </div>
+<!--    <section class="shops" id="shops">-->
+<!--      <div class="shops__container">-->
+<!--        <div class="shops__title">-->
+<!--          Выбирай магазины и заказывай-->
+<!--          товары по низким ценам-->
+<!--        </div>-->
 
-        <div class="partners__info">
-          <input type="text" class="partners__phone" placeholder="Ваш телефон">
+<!--        <div class="shops__list">-->
+<!--          <div class="shops__item sima-mag">-->
+<!--            <a href="/" class="shops__item-title">-->
+<!--              Sima-mag.ru-->
+<!--            </a>-->
 
-          <div class="partners__button">
-            Узнать подробнее
-          </div>
-        </div>
+<!--            <div class="shops__categories">-->
+<!--              <div class="shops__category shops__category-1" >-->
+<!--                <div class="shops__category-name">-->
+<!--                  Детские товары-->
+<!--                </div>-->
+<!--              </div>-->
+<!--              <div class="shops__category shops__category-2" >-->
+<!--                <div class="shops__category-name">-->
+<!--                  <span>Товары</span>  для праздника-->
+<!--                </div>-->
+<!--              </div>-->
+<!--              <div class="shops__category shops__category-3" >-->
+<!--                <div class="shops__category-name">-->
+<!--                  Посуда-->
+<!--                </div>-->
+<!--              </div>-->
+<!--              <div class="shops__category shops__category-4" >-->
+<!--                <div class="shops__category-name">-->
+<!--                  Текстиль-->
+<!--                </div>-->
+<!--              </div>-->
+<!--              <div class="shops__category shops__category-5" >-->
+<!--                <div class="shops__category-name">-->
+<!--                  Творчество и хобби-->
+<!--                </div>-->
+<!--              </div>-->
+<!--            </div>-->
 
-        <div class="partners__background"></div>
-        <div class="partners__background-boxes"></div>
-        <div class="partners__background-family"></div>
-        <div class="partners__background-logo"></div>
-      </div>
+<!--            <a href="/" class="shops__item-link">-->
+<!--              Переход в магазин-->
+<!--            </a>-->
+<!--          </div>-->
 
-    </section>
+<!--          <div class="shops__item gala-mag">-->
+<!--            <a href="/" class="shops__item-title">-->
+<!--              Гала-маг-->
+<!--            </a>-->
+
+<!--            <div class="shops__categories">-->
+<!--              <div class="shops__category shops__category-1" >-->
+<!--                <div class="shops__category-name">-->
+<!--                  Бытовая техника-->
+<!--                </div>-->
+<!--              </div>-->
+<!--              <div class="shops__category shops__category-2" >-->
+<!--                <div class="shops__category-name">-->
+<!--                  Посуда-->
+<!--                </div>-->
+<!--              </div>-->
+<!--              <div class="shops__category shops__category-3" >-->
+<!--                <div class="shops__category-name">-->
+<!--                  Инструменты-->
+<!--                </div>-->
+<!--              </div>-->
+<!--              <div class="shops__category shops__category-4" >-->
+<!--                <div class="shops__category-name">-->
+<!--                  Авто-->
+<!--                </div>-->
+<!--              </div>-->
+<!--              <div class="shops__category shops__category-5" >-->
+<!--                <div class="shops__category-name">-->
+<!--                  Спорт и отдых-->
+<!--                </div>-->
+<!--              </div>-->
+<!--            </div>-->
+<!--            <a href="/" class="shops__item-link">-->
+<!--              Переход в магазин-->
+<!--            </a>-->
+<!--          </div>-->
+
+<!--          <div class="shops__item nazelenom">-->
+<!--            <div class="shops__item-title">-->
+<!--              <img class="shops__item-logo" src="./dist/images/shops/nazelenom.png" alt="nazelenom.ru">-->
+<!--            </div>-->
+
+<!--            <div class="shops__categories">-->
+<!--              <div class="shops__category shops__category-1" >-->
+<!--                <div class="shops__category-name">-->
+<!--                  Бытовая химия-->
+<!--                </div>-->
+<!--              </div>-->
+<!--              <div class="shops__category shops__category-2" >-->
+<!--                <div class="shops__category-name">-->
+<!--                  Красота и гигиена-->
+
+<!--                </div>-->
+<!--              </div>-->
+<!--              <div class="shops__category shops__category-3" >-->
+<!--                <div class="shops__category-name">-->
+<!--                  Канцелярские товары-->
+<!--                </div>-->
+<!--              </div>-->
+<!--              <div class="shops__category shops__category-4" >-->
+<!--                <div class="shops__category-name">-->
+<!--                  Сад и огород-->
+<!--                </div>-->
+<!--              </div>-->
+<!--              <div class="shops__category shops__category-5" >-->
+<!--                <div class="shops__category-name">-->
+<!--                  Посуда-->
+<!--                </div>-->
+<!--              </div>-->
+<!--            </div>-->
+<!--            <a href="/" class="shops__item-link">-->
+<!--              Переход в магазин-->
+<!--            </a>-->
+<!--          </div>-->
+<!--        </div>-->
+<!--        <div class="shops__background"></div>-->
+<!--        <div class="shops__background-boxes"></div>-->
+<!--        <div class="shops__background-box1"></div>-->
+<!--        <div class="shops__background-box2"></div>-->
+<!--        <div class="shops__background-box3"></div>-->
+<!--        <div class="shops__background-light"></div>-->
+<!--        <div class="shops__background-hand"></div>-->
+<!--        <div class="shops__background-lamp"></div>-->
+<!--        <div class="shops__background-flower"></div>-->
+<!--      </div>-->
+<!--    </section >-->
+
+<!--    <section class="contacts" id="contacts">-->
+
+<!--      <div class="contacts__container">-->
+<!--        <h2 class="contacts__title">-->
+<!--          География доставок-->
+<!--        </h2>-->
+
+<!--        <div class="contacts__select">-->
+<!--          <div class="contacts__select-title">Выбрать пункт выдачи</div>-->
+<!--          <div class="contacts__select-list">-->
+<!--            <div class="contacts__select-item" data-city="mgn">-->
+<!--              Магнитогорск-->
+<!--            </div>-->
+<!--            <div class="contacts__select-item" data-city="askarovo">-->
+<!--              Аскаровов-->
+<!--            </div>-->
+<!--            <div class="contacts__select-item" data-city="uchaly">-->
+<!--              Учалы-->
+<!--            </div>-->
+<!--            <div class="contacts__select-item" data-city="beloreck">-->
+<!--              Белорецк-->
+<!--            </div>-->
+<!--          </div>-->
+<!--        </div>-->
+<!--        <div class="contacts__map" id="contacts__map">-->
+
+<!--          <div class="contacts__background-kettle"></div>-->
+<!--          <div class="contacts__background-clock"></div>-->
+<!--          <div class="contacts__background-green1 contacts__background-green"></div>-->
+<!--          <div class="contacts__background-green2 contacts__background-green"></div>-->
+<!--          <div class="contacts__background-green3 contacts__background-green"></div>-->
+<!--          <div class="contacts__background-green4 contacts__background-green"></div>-->
+<!--          <div class="contacts__background-green5 contacts__background-green"></div>-->
+<!--          <div class="contacts__background-green6 contacts__background-green"></div>-->
+<!--      </div>-->
+<!--      </div>-->
+<!--    </section>-->
+
+<!--    <section class="partners" id="partners">-->
+<!--      <div class="partners__container">-->
+<!--        <div class="partners__title">Стань партнёром</div>-->
+<!--        <div class="partners__description">-->
+<!--          Открывай пункты выдачи заказов-->
+<!--          и зарабатывай вместе с нами-->
+<!--        </div>-->
+
+<!--        <div class="partners__info">-->
+<!--          <input type="tel"-->
+<!--                 class="partners__phone"-->
+<!--                 placeholder="Ваш телефон"-->
+<!--                 data-mask="+7 (###) ###-##-##"-->
+<!--                 autocomplete="tel"-->
+<!--          >-->
+<!--          <div class="partners__button">-->
+<!--            Узнать подробнее-->
+<!--          </div>-->
+<!--        </div>-->
+
+<!--        <div class="partners__background"></div>-->
+<!--        <div class="partners__background-boxes"></div>-->
+<!--        <div class="partners__background-family"></div>-->
+<!--        <div class="partners__background-logo"></div>-->
+<!--      </div>-->
+
+<!--    </section>-->
   </main>
 
-  <footer class="footer">
-    <div class="footer__container">
-      <div class="footer__links">
-        <a href="/" class="footer__link">Главная</a>
-        <a href="/" class="footer__link">Магазины</a>
-        <a href="/" class="footer__link">Доставка</a>
-        <a href="/" class="footer__link"><span>Бизнес</span> - поставщикам</a>
-        <a href="/" class="footer__link"><span>Бизнес</span> ПВЗ</a>
-      </div>
+<!--  <footer class="footer">-->
+<!--    <div class="footer__container">-->
+<!--      <div class="footer__links">-->
+<!--        <a href="/" class="footer__link">Главная</a>-->
+<!--        <a href="/" class="footer__link">Магазины</a>-->
+<!--        <a href="/" class="footer__link">Доставка</a>-->
+<!--        <a href="/" class="footer__link"><span>Бизнес</span> - поставщикам</a>-->
+<!--        <a href="/" class="footer__link"><span>Бизнес</span> ПВЗ</a>-->
+<!--      </div>-->
 
-      <div class="footer__contacts">
-        <a href="tel:+7351933-02-03" class="footer__link">+7 (3519) 33-02-03</a>
-        <a href="https://www.vk.com/turbooru" class="footer__link">vk.com/turbooru</a>
-      </div>
-    </div>
-  </footer>
+<!--      <div class="footer__contacts">-->
+<!--        <a href="tel:+7351933-02-03" class="footer__link">+7 (3519) 33-02-03</a>-->
+<!--        <a href="https://www.vk.com/turbooru" class="footer__link">vk.com/turbooru</a>-->
+<!--      </div>-->
+<!--    </div>-->
+<!--  </footer>-->
 </div>
+<script src="dist/maska.js"></script>
 <script src="dist/script.js"></script>
 </body>
 </html>

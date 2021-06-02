@@ -87,6 +87,9 @@ div {
   left: 0;
   bottom: 1px; }
 
+.header__burger {
+  display: none; }
+
 /*END HEADER*/
 /*HERO*/
 .hero {
@@ -271,6 +274,7 @@ div {
   margin-top: 129px; }
 
 .categories__container {
+  position: relative;
   width: 1344px;
   margin: 0 auto; }
 
@@ -450,7 +454,7 @@ div {
   width: 254px;
   height: 429px;
   top: 242px;
-  left: 5px;
+  left: -281px;
   background-image: url(./images/categories/towel.png);
   z-index: 1;
   background-repeat: no-repeat; }
@@ -460,7 +464,7 @@ div {
   height: 454px;
   position: absolute;
   top: 412px;
-  right: 0;
+  right: -298px;
   background-image: url(./images/categories/cube.png); }
 
 /*END CATEGORIES*/
@@ -469,6 +473,7 @@ div {
   position: relative; }
 
 .shops__container {
+  position: relative;
   width: 1200px;
   margin: 0 auto; }
 
@@ -612,19 +617,29 @@ div {
   left: 0;
   bottom: 1px; }
 
+.shops__background {
+  position: absolute;
+  width: 1932px;
+  height: 1131px;
+  top: 609px;
+  left: -359px;
+  background-image: url(./images/shops/background.png);
+  background-repeat: no-repeat;
+  z-index: -1; }
+
 .shops__background-boxes {
   position: absolute;
   width: 446px;
   height: 825px;
   top: -83px;
-  left: 11px;
+  left: -359px;
   background-image: url(./images/shops/boxes.png);
   background-repeat: no-repeat;
   z-index: -1; }
 
 .shops__background-box3 {
   position: absolute;
-  right: 4px;
+  right: -360px;
   top: 354px;
   width: 178px;
   height: 171px;
@@ -633,7 +648,7 @@ div {
 
 .shops__background-box1 {
   position: absolute;
-  right: 37px;
+  right: -324px;
   top: -22px;
   width: 118px;
   height: 121px;
@@ -642,7 +657,7 @@ div {
 
 .shops__background-box2 {
   position: absolute;
-  right: 195px;
+  right: -174px;
   top: 100px;
   width: 205px;
   height: 191px;
@@ -651,7 +666,7 @@ div {
 
 .shops__background-light {
   position: absolute;
-  left: 142px;
+  left: -216px;
   top: 911px;
   width: 163px;
   height: 275px;
@@ -660,7 +675,7 @@ div {
 
 .shops__background-hand {
   position: absolute;
-  right: 5px;
+  right: -361px;
   width: 342px;
   height: 409px;
   top: 913px;
@@ -672,7 +687,7 @@ div {
   width: 327px;
   height: 653px;
   top: 1379px;
-  left: 9px;
+  left: -356px;
   background-image: url(./images/shops/lamp.png);
   z-index: 1; }
 
@@ -680,7 +695,7 @@ div {
   position: absolute;
   width: 301px;
   height: 607px;
-  right: 11px;
+  right: -354px;
   top: 1538px;
   background-image: url(./images/shops/flower.png);
   z-index: 1; }
@@ -1036,3 +1051,174 @@ div {
   display: block; }
 
 /*END FOOTER*/
+@media (max-width: 800px) {
+  .header {
+    padding-top: 27px; }
+    .header__container {
+      width: 100%;
+      padding-left: 31px; }
+    .header__logo {
+      width: 159px;
+      height: 16px; }
+    .header__logo-text {
+      font-size: 24px; }
+    .header__items {
+      display: none; }
+    .header__burger {
+      position: absolute;
+      right: 0;
+      top: 0;
+      display: block;
+      width: 60px;
+      height: 66px;
+      border-radius: 15px 0 0 15px;
+      background: #ffe038; }
+      .header__burger span {
+        position: absolute;
+        left: 18px;
+        top: 19px;
+        width: 35px;
+        height: 6px;
+        border-radius: 4px;
+        background: #080807; }
+      .header__burger span:nth-child(2) {
+        top: 30px; }
+      .header__burger span:last-child {
+        top: 41px; }
+  .hero {
+    margin-top: 51px; }
+    .hero__container {
+      height: 301px;
+      width: 100%;
+      padding-left: 27px; }
+    .hero__image-wrapper {
+      width: 328px;
+      height: 136px; }
+    .hero__image {
+      max-width: 100%;
+      max-height: 100%; }
+    .hero__car-image {
+      top: 32px;
+      left: 40px;
+      width: 172px;
+      height: 18px;
+      background-size: contain; }
+    .hero__car-text {
+      left: 44px;
+      top: 54px;
+      font-size: 11.5px; }
+    .hero__background-image {
+      display: none; }
+    .hero__background {
+      display: block;
+      width: 305px;
+      height: 272px;
+      right: 0;
+      top: 55px;
+      background-size: contain; }
+    .hero__text {
+      top: 157px;
+      right: 41px;
+      font-size: 20px;
+      line-height: 1.15; }
+  .advantages__container {
+    width: 100%;
+    padding-left: 39px; }
+  .advantages__title {
+    margin-top: 0;
+    font-size: 23px;
+    font-weight: 800;
+    margin-bottom: 16px;
+    line-height: 1.37; }
+  .advantages__item {
+    margin-bottom: 12px; }
+  .advantages__item-title {
+    font-size: 17px; }
+  .advantages__item-description {
+    width: 302px;
+    font-size: 13px; }
+  .advantages__table, .advantages__car, .advantages__sweet, .advantages__background {
+    display: none; }
+  .categories {
+    margin-top: 51px; }
+    .categories__container {
+      width: 100%; }
+    .categories__title {
+      font-size: 23px;
+      padding-left: 72px; }
+    .categories__list {
+      position: relative;
+      display: grid;
+      margin-top: 65px;
+      grid-template-areas: "item-1 item-2" "item-4 item-5" "item-6 item-7" "item-8 item-9" "item-11 item-10";
+      grid-template-rows: 90px 80px 107px 118px 57px;
+      grid-template-columns: 175px 201px; }
+    .categories__item {
+      font-size: 0 !important;
+      background-image: none !important; }
+    .categories .categories__item span {
+      display: none; }
+    .categories__item-1 {
+      top: 12px;
+      left: 0;
+      right: unset;
+      width: 168px;
+      height: 78px; }
+    .categories__item-2 {
+      left: 6px;
+      right: unset;
+      top: 29px;
+      width: 122px;
+      padding: 0;
+      height: 52px; }
+    .categories__item-3 {
+      position: absolute;
+      height: 52px;
+      left: unset;
+      width: 99px;
+      top: -1px;
+      right: 0; }
+    .categories__item-4 {
+      width: 166px;
+      height: 65px;
+      padding: 0;
+      top: 15px;
+      left: 10px; }
+    .categories__item-5 {
+      left: 15px;
+      top: 4px;
+      width: 166px;
+      height: 65px;
+      padding: 0; }
+    .categories__item-6 {
+      padding: 0;
+      width: 176px;
+      top: 12px;
+      left: 7px;
+      right: unset;
+      height: 95px; }
+    .categories__item-7 {
+      left: 19px;
+      top: 2px;
+      right: unset;
+      width: 160px;
+      height: 65px; }
+    .categories__item-8 {
+      left: 12px;
+      right: unset;
+      width: 168px;
+      height: 98px;
+      top: 20px; }
+    .categories__item-9 {
+      width: 167px;
+      top: -17px;
+      left: 22px;
+      right: unset;
+      height: 77px; }
+    .categories__item-10 {
+      width: 185px;
+      height: 57px;
+      left: 23px;
+      top: -33px; }
+    .categories__background-cube {
+      display: none; } }
