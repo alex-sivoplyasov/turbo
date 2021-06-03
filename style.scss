@@ -1418,83 +1418,115 @@ div {
     &__list {
       position: relative;
       display: grid;
-      margin-top: 65px;
+      margin-top: 19px;
       grid-template-areas:
-        "item-1 item-2"
-        "item-4 item-5"
-        "item-6 item-7"
-        "item-8 item-9"
-        "item-11 item-10";
+        "item-2 item-9"
+        "item-5 item-1"
+        "item-6 item-3"
+        "item-8 item-4"
+        "item-11 item-7";
       grid-template-rows: 90px 80px 107px 118px 57px;
       grid-template-columns: 175px 201px;
     }
 
-    &__item {
-      font-size: 0 !important;
-      background-image: none !important;
-    }
-
-    .categories__item span {
-      display: none;
-    }
-
-    &__item-1 {
+    &__item-2 {
       top: 12px;
       left: 0;
       right: unset;
       width: 168px;
       height: 78px;
+      padding: 12px 0 0 102px;
+      font-size: 13px;
+      background-position: 6px;
+      background-size: 84px;
     }
 
-    &__item-2 {
+    &__item-9 {
       left: 6px;
       right: unset;
       top: 29px;
       width: 122px;
-      padding: 0;
       height: 52px;
+      font-size: 12.5px;
+      padding-left: 31px;
+      padding-top: 6px;
     }
 
-    &__item-3 {
+    &__item-9 span:first-child {
+      padding: 0;
+      font-size: 12.5px;
+      margin-bottom: 1px;
+    }
+
+    &__item-9 span:nth-child(2) {
+      padding-left: 0;
+    }
+
+    &__item-9 span:nth-child(3) {
+      font-size: 19.5px;
+    }
+
+    &__item-10 {
       position: absolute;
       height: 52px;
       left: unset;
       width: 99px;
       top: -1px;
       right: 0;
-    }
-
-    &__item-4 {
-      width: 166px;
-      height: 65px;
-      padding: 0;
-      top: 15px;
-      left: 10px;
+      font-size: 13.5px;
+      padding-left: 12px;
+      padding-top: 8px;
     }
 
     &__item-5 {
+      width: 169px;
+      height: 65px;
+      top: 15px;
+      left: 10px;
+      background-size: 169px;
+      font-size: 13.5px;
+      padding-left: 93px;
+      line-height: unset;
+      padding-top: 11px;
+      padding-right: 0;
+    }
+
+    &__item-1 {
       left: 15px;
       top: 4px;
       width: 166px;
       height: 65px;
-      padding: 0;
+      font-size: 13.5px;
+      background-size: 167px;
+      background-repeat: no-repeat;
+      padding-left: 13px;
+      padding-top: 8px;
     }
 
     &__item-6 {
-      padding: 0;
       width: 176px;
       top: 12px;
       left: 7px;
       right: unset;
       height: 95px;
+      font-size: 13.5px;
+      line-height: unset;
+      padding-left: 91px;
+      padding-top: 5px;
+      background-size: 176px;
+      background-repeat: no-repeat;
     }
 
-    &__item-7 {
+    &__item-3 {
       left: 19px;
       top: 2px;
       right: unset;
       width: 160px;
       height: 65px;
+      padding-left: 27px;
+      padding-top: 8px;
+      font-size: 13.5px;
+      padding-right: 3px;
     }
 
     &__item-8 {
@@ -1503,24 +1535,333 @@ div {
       width: 168px;
       height: 98px;
       top: 20px;
+      font-size: 13.5px;
+      padding-left: 19px;
+      padding-top: 8px;
+      line-height: unset;
+      background-size: 167px;
+      background-repeat: no-repeat;
     }
 
-    &__item-9 {
+    &__item-4 {
       width: 167px;
       top: -17px;
       left: 22px;
       right: unset;
       height: 77px;
+      padding-left: 10px;
+      padding-top: 48px;
+      font-size: 13.5px;
+      background-size: 167px;
+      background-repeat: no-repeat;
     }
 
-    &__item-10 {
+    &__item-7 {
       width: 185px;
       height: 57px;
       left: 23px;
       top: -33px;
+      padding-left: 18px;
+      padding-top: 10px;
+      font-size: 13.5px;
+      line-height: unset;
     }
 
     &__background-cube {
+      display: none;
+    }
+  }
+
+  .shops {
+    margin-top: 19px;
+    &__container {
+      width: 100%;
+    }
+    &__title {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      padding-left: 55px;
+      margin-bottom: 27px;
+      margin-top: 0;
+      width: fit-content;
+      font-size: 22.5px;
+
+      span {
+        font-size: 12.5px;
+        margin-top: -5px;
+      }
+    }
+
+    &__item-title {
+      font-size: 23px;
+      padding-left: 113px;
+      margin-bottom: 25px;
+    }
+
+    &__categories {
+      grid-template-areas:
+        "item-1 item-2"
+        "item-1 item-3"
+        "item-4 item-5";
+      grid-template-rows: 117px 74px 178px;
+      grid-template-columns: 156px 170px;
+      margin-left: 26px;
+      grid-gap: 0;
+    }
+
+    &__category-name {
+      font-size: 13.5px;
+      padding-top: 18px;
+      font-weight: 600;
+      padding-left: 18px;
+    }
+
+    .sima-mag {
+      position: relative;
+      margin-bottom: 32px;
+      .shops__category-1 {
+        width: 156px;
+        height: 178px;
+        font-size: 13.5px;
+        border-radius: 15px;
+        background-size: 156px;
+      }
+
+      .shops__category-2 {
+        width: 149px;
+        height: 117px;
+        left: 20px;
+        background-size: 151px;
+      }
+
+      .shops__category-2 .shops__category-name {
+        padding-left: 0;
+        text-align: center;
+      }
+
+      .shops__category-3 {
+        width: 148px;
+        height: 46px;
+        left: 19px;
+        top: 14px;
+        background-size: 148px;
+      }
+
+      .shops__category-3 .shops__category-name {
+        padding-top: 8px;
+        padding-left: 24px;
+      }
+
+      .shops__category-4 {
+        width: 91px;
+        height: 178px;
+        background-size: 90px;
+      }
+
+      .shops__category-4 .shops__category-name {
+        padding-top: 21px;
+        padding-left: 11px;
+      }
+
+      .shops__category-5 {
+        width: 91px;
+        height: 178px;
+        left: 77px;
+        position: relative;
+        background-size: 90px;
+      }
+
+      .shops__category-5 .shops__category-name {
+        padding-top: 16px;
+        padding-left: 6px;
+        text-align: center;
+      }
+
+      .shops__item-link {
+        position: absolute;
+        width: 116px;
+        height: 175px;
+        border-radius: 15px;
+        background-color: #080807;
+        color: #fee532;
+        font-size: 13px;
+        left: 3px;
+        top: 211px;
+        padding-top: 16px;
+        padding-left: 18px;
+        box-sizing: border-box;
+        padding-right: 28px;
+        text-align: center;
+      }
+    }
+
+    .gala-mag {
+      position: relative;
+      .shops__iten-title {
+        padding-left: 133px;
+        margin-bottom: 16px;
+      }
+
+      .shops__category-1 {
+        width: 156px;
+        height: 178px;
+        font-size: 13.5px;
+        border-radius: 15px;
+        background-size: 156px;
+      }
+
+      .shops__category-2 {
+        width: 149px;
+        height: 117px;
+        left: 20px;
+        background-size: 151px;
+      }
+
+      .shops__category-2 .shops__category-name {
+        padding-left: 0;
+        text-align: center;
+      }
+
+      .shops__category-3 {
+        width: 148px;
+        height: 46px;
+        left: 19px;
+        top: 14px;
+        background-size: 148px;
+      }
+
+      .shops__category-3 .shops__category-name {
+        padding-top: 8px;
+        padding-left: 24px;
+      }
+
+      .shops__category-4 {
+        width: 91px;
+        height: 178px;
+        background-size: 90px;
+      }
+
+      .shops__category-4 .shops__category-name {
+        padding-top: 21px;
+        padding-left: 11px;
+      }
+
+      .shops__category-5 {
+        width: 91px;
+        height: 178px;
+        left: 77px;
+        position: relative;
+        background-size: 90px;
+      }
+
+      .shops__category-5 .shops__category-name {
+        padding-top: 16px;
+        padding-left: 6px;
+        text-align: center;
+      }
+
+      .shops__item-link {
+        position: absolute;
+        width: 116px;
+        height: 175px;
+        border-radius: 15px;
+        background-color: #080807;
+        color: #fee532;
+        font-size: 13px;
+        left: 5px;
+        top: 213px;
+        padding-top: 16px;
+        padding-left: 18px;
+        box-sizing: border-box;
+        padding-right: 28px;
+        text-align: center;
+      }
+
+      .shops__item-link:after {
+        display: none;
+      }
+    }
+
+    .nazelenom {
+      position: relative;
+      .shops__category-1 {
+        width: 156px;
+        height: 178px;
+        font-size: 13.5px;
+        border-radius: 15px;
+        background-size: 156px;
+      }
+
+      .shops__category-2 {
+        width: 149px;
+        height: 117px;
+        left: 20px;
+        background-size: 151px;
+      }
+
+      .shops__category-2 .shops__category-name {
+        padding-left: 0;
+        text-align: center;
+      }
+
+      .shops__category-3 {
+        width: 148px;
+        height: 46px;
+        left: 19px;
+        top: 14px;
+        background-size: 148px;
+      }
+
+      .shops__category-3 .shops__category-name {
+        padding-top: 8px;
+        padding-left: 24px;
+      }
+
+      .shops__category-4 {
+        width: 91px;
+        height: 178px;
+        background-size: 90px;
+      }
+
+      .shops__category-4 .shops__category-name {
+        padding-top: 21px;
+        padding-left: 11px;
+      }
+
+      .shops__category-5 {
+        width: 91px;
+        height: 178px;
+        left: 77px;
+        position: relative;
+        background-size: 90px;
+      }
+
+      .shops__category-5 .shops__category-name {
+        padding-top: 16px;
+        padding-left: 6px;
+        text-align: center;
+      }
+
+      .shops__item-link {
+        position: absolute;
+        width: 116px;
+        height: 175px;
+        border-radius: 15px;
+        background-color: #080807;
+        color: #fee532;
+        font-size: 13px;
+        left: 5px;
+        top: 213px;
+        padding-top: 16px;
+        padding-left: 18px;
+        box-sizing: border-box;
+        padding-right: 28px;
+        text-align: center;
+      }
+    }
+
+    &__background, &__background-boxes, &__background-box1, &__background-box2, &__background-box3, &__background-light, &__background-hand, &__background-flower {
       display: none;
     }
   }
