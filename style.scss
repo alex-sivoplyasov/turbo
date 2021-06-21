@@ -890,9 +890,6 @@ div {
 
 .contacts__select {
   position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   margin-bottom: 62px;
   margin-left: 217px;
   width: 660px;
@@ -911,6 +908,7 @@ div {
   width: 21px;
   height: 34px;
   background-image: url(./images/contacts/location.png);
+  z-index: 2;
 }
 
 .contacts__select:after {
@@ -922,9 +920,13 @@ div {
   background-position: bottom;
   height: 17px;
   background-image: url(./images/contacts/arrow.png);
+  z-index: 2;
 }
 
 .contacts__select-title {
+  position: relative;
+  z-index: 2;
+  padding-left: 63px;
   font-size: 41.5px;
   font-weight: bold;
   font-stretch: normal;
@@ -940,15 +942,23 @@ div {
 }
 
 .contacts__select.open .contacts__select-list {
-  display: block;
   position: absolute;
+  height: 340px;
+  top: 0;
+  z-index: 1;
+  padding-top: 100px;
+  padding-left: 64px;
+  display: block;
   bottom: -94px;
   width: 100%;
   border-radius: 20px;
   box-shadow: 1.5px 2.6px 13px 0 rgba(33, 33, 33, 0.33);
-  padding: 16px 40px;
   background-color: #FFFFFF;
-  z-index: 1;
+}
+
+.contacts__select-item {
+  font-size: 40px;
+  padding-bottom: 10px;
 }
 
 #contacts__map .ymaps-2-1-78-controls__control {
@@ -1261,11 +1271,46 @@ div {
   display: block;
 }
 
+.footer__bottom {
+  display: none;
+}
+
 
 /*END FOOTER*/
 
+@media(max-width: 1400px) {
 
-@media(max-width: 800px) {
+  body {
+    height: 100vh;
+  }
+
+  .app {
+    width: 1920px;
+    transform: scale(0.8);
+    margin-left: -329px;
+    margin-top: -700px;
+  }
+}
+
+@media(max-width: 1200px) {
+  .app {
+    transform: scale(0.8);
+    margin-left: -380px;
+  }
+}
+
+@media(max-width: 1100px) {
+  .app {
+    position: relative;
+    max-width: 384px;
+    overflow: hidden;
+    width: 100%;
+    //margin-left: 0;
+    //margin-top: 0;
+    margin: 0 auto;
+    transform: unset;
+  }
+
   .header {
     padding-top: 27px;
     &__container {
@@ -1567,7 +1612,7 @@ div {
       line-height: unset;
     }
 
-    &__background-cube {
+    &__background-cube, &__background-towel {
       display: none;
     }
   }
@@ -1689,16 +1734,24 @@ div {
         left: 3px;
         top: 211px;
         padding-top: 16px;
-        padding-left: 18px;
+        padding-left: 0;
         box-sizing: border-box;
-        padding-right: 28px;
+        padding-right: 0;
         text-align: center;
+        background-image: url(./images/basket.png);
+        background-repeat: no-repeat;
+        background-position: center 79px;
+      }
+
+      .shops__item-link:after {
+        display: none;
       }
     }
 
     .gala-mag {
       position: relative;
-      .shops__iten-title {
+      margin-bottom: 47px;
+      .shops__item-title {
         padding-left: 133px;
         margin-bottom: 16px;
       }
@@ -1711,6 +1764,11 @@ div {
         background-size: 156px;
       }
 
+      .shops__category-1 .shops__category-name {
+        padding-top: 13px;
+        padding-left: 17px;
+      }
+
       .shops__category-2 {
         width: 149px;
         height: 117px;
@@ -1719,8 +1777,8 @@ div {
       }
 
       .shops__category-2 .shops__category-name {
-        padding-left: 0;
-        text-align: center;
+        padding-left: 19px;
+        padding-top: 11px;
       }
 
       .shops__category-3 {
@@ -1732,8 +1790,8 @@ div {
       }
 
       .shops__category-3 .shops__category-name {
-        padding-top: 8px;
-        padding-left: 24px;
+        padding-top: 4px;
+        padding-left: 26px;
       }
 
       .shops__category-4 {
@@ -1743,8 +1801,8 @@ div {
       }
 
       .shops__category-4 .shops__category-name {
-        padding-top: 21px;
-        padding-left: 11px;
+        padding-top: 16px;
+        padding-left: 26px;
       }
 
       .shops__category-5 {
@@ -1766,16 +1824,19 @@ div {
         width: 116px;
         height: 175px;
         border-radius: 15px;
-        background-color: #080807;
-        color: #fee532;
         font-size: 13px;
         left: 5px;
-        top: 213px;
+        top: 201px;
         padding-top: 16px;
-        padding-left: 18px;
+        padding-left: 0;
         box-sizing: border-box;
-        padding-right: 28px;
+        padding-right: 0;
         text-align: center;
+        background-color: #ffe038;
+        color: #000000;
+        background-image: url(./images/black-basket.png);
+        background-repeat: no-repeat;
+        background-position: center 79px;
       }
 
       .shops__item-link:after {
@@ -1785,12 +1846,26 @@ div {
 
     .nazelenom {
       position: relative;
+
+      .shops__item-title {
+        margin-bottom: 19px;
+      }
+
+      .shops__item-logo {
+        width: 170px;
+      }
+
       .shops__category-1 {
         width: 156px;
         height: 178px;
         font-size: 13.5px;
         border-radius: 15px;
         background-size: 156px;
+      }
+
+      .shops__category-1 .shops__category-name {
+        padding-top: 12px;
+        padding-left: 21px;
       }
 
       .shops__category-2 {
@@ -1801,8 +1876,10 @@ div {
       }
 
       .shops__category-2 .shops__category-name {
-        padding-left: 0;
+        padding-left: 19px;
         text-align: center;
+        padding-top: 9px;
+        padding-right: 10px;
       }
 
       .shops__category-3 {
@@ -1814,32 +1891,37 @@ div {
       }
 
       .shops__category-3 .shops__category-name {
-        padding-top: 8px;
-        padding-left: 24px;
+        padding-top: 6px;
+        padding-left: 3px;
+        text-align: center;
       }
 
       .shops__category-4 {
+        top: 7px;
+        position: relative;
         width: 91px;
         height: 178px;
         background-size: 90px;
       }
 
       .shops__category-4 .shops__category-name {
-        padding-top: 21px;
-        padding-left: 11px;
+        padding-top: 12px;
+        padding-left: 1px;
+        text-align: center;
       }
 
       .shops__category-5 {
         width: 91px;
         height: 178px;
-        left: 77px;
-        position: relative;
         background-size: 90px;
+        position: relative;
+        top: 9px;
+        left: 80px;
       }
 
       .shops__category-5 .shops__category-name {
-        padding-top: 16px;
-        padding-left: 6px;
+        padding-top: 11px;
+        padding-left: 0px;
         text-align: center;
       }
 
@@ -1849,20 +1931,328 @@ div {
         height: 175px;
         border-radius: 15px;
         background-color: #080807;
-        color: #fee532;
+        color: #8dc343;
         font-size: 13px;
         left: 5px;
         top: 213px;
         padding-top: 16px;
-        padding-left: 18px;
+        padding-left: 0;
         box-sizing: border-box;
-        padding-right: 28px;
+        padding-right: 0;
         text-align: center;
+        background-image: url(./images/basket.png);
+        background-repeat: no-repeat;
+        background-position: center 79px;
+      }
+
+      .shops__item-link:after {
+        display: none;
       }
     }
 
-    &__background, &__background-boxes, &__background-box1, &__background-box2, &__background-box3, &__background-light, &__background-hand, &__background-flower {
+    &__background, &__background-boxes, &__background-box1,
+    &__background-box2, &__background-box3, &__background-light,
+    &__background-hand, &__background-flower, &__background-lamp {
       display: none;
     }
+  }
+
+  .contacts {
+    &__container {
+      padding: 0;
+      width: 100%;
+    }
+
+    &__map {
+      width: 100%;
+      height: 316px;
+    }
+
+    &__title {
+      font-size: 23px;
+      margin-top: 55px;
+      margin-left: 72px;
+      margin-bottom: 17px;
+    }
+
+    &__select {
+      display: block;
+      width: 229px;
+      height: 28px;
+      margin-left: 91px;
+      margin-bottom: 23px;
+      box-shadow: none;
+      z-index: 1;
+    }
+
+    &__select:before {
+      position: absolute;
+      content: '';
+      top: 9px;
+      left: 8px;
+      width: 8px;
+      height: 12px;
+      background-image: url(./images/contacts/location.png);
+      background-size: contain;
+      z-index: 2;
+    }
+
+    &__select:after {
+      position: absolute;
+      content: '';
+      top: 13px;
+      right: 10px;
+      width: 12px;
+      height: 7px;
+      background-image: url(./images/contacts/arrow.png);
+      background-position: bottom;
+      z-index: 2;
+    }
+
+    &__select-title {
+      position: relative;
+      font-size: 14.5px;
+      padding-top: 0;
+      padding-left: 21px;
+      margin-top: -1px;
+      box-shadow: 0px 3px 13px 0 rgba(33, 33, 33, 0.33);
+      border-radius: 20px;
+      z-index: 2;
+    }
+
+    .contacts__select.open {
+      .contacts__select-title {
+        box-shadow: none;
+      }
+
+      .contacts__select-list {
+        position: absolute;
+        height: 133px;
+        top: 0;
+        z-index: 1;
+        padding-top: 35px;
+        padding-left: 22px;
+      }
+
+      .contacts__select-item {
+        font-size: 13.5px;
+        margin-bottom: 7px;
+        padding-bottom: 0;
+      }
+
+    }
+
+
+
+    &__background-clock, &__background-green, &__background-kettle {
+      display: none;
+    }
+  }
+
+  .partners {
+    margin-top: 0;
+    &__container {
+      height: 412px;
+      width: 100%;
+      padding: 0;
+    }
+
+    &__title {
+      font-size: 22px;
+      padding-left: 98px;
+      padding-top: 29px;
+      margin-bottom: 0;
+    }
+
+    &__description {
+      font-size: 14.5px;
+      width: 359px;
+      padding-left: 44px;
+      text-align: center;
+      margin-bottom: 13px;
+    }
+
+    &__info {
+      padding-left: 26px;
+    }
+
+    &__phone {
+      width: 151px;
+      height: 29px;
+      font-size: 13px;
+      box-sizing: border-box;
+      margin-right: 25px;
+      padding: 0 24px;
+    }
+
+    &__button {
+      width: 150px;
+      height: 29px;
+      font-size: 13px;
+    }
+
+    &__background, &__background-boxes {
+      display: none;
+    }
+
+    &__background-family {
+      display: block;
+      width: 359px;
+      height: 241px;
+      top: 170px;
+      left: 2px;
+      background-size: contain;
+    }
+
+    &__background-logo {
+      width: 103px;
+      height: 18px;
+      background-size: contain;
+      left: 22px;
+      top: 306px;
+    }
+  }
+
+  .footer {
+    padding: 0;
+    background-color: white;
+    &__container {
+      position: relative;
+      flex-wrap: wrap;
+      padding-left: 0;
+      width: 100%;
+    }
+
+    &__links {
+      margin-top: 21px;
+      margin-left: 52px;
+    }
+
+    &__link {
+      font-size: 14px;
+      margin-right: 43px;
+      height: 14px;
+    }
+
+    &__link:nth-child(4), &__link:nth-child(5) {
+      display: none;
+    }
+
+    &__contacts {
+      width: 100%;
+      background-color: #000000;
+      font-size: 14px;
+      margin-top: 18px;
+      height: 75px;
+      padding-top: 16px;
+      padding-left: 132px;
+
+      .footer__link {
+        color: #ffe038;
+        font-weight: 600;
+        margin-bottom: 10px;
+      }
+    }
+
+    &__bottom {
+      display: flex;
+      padding-left: 74px;
+      padding-top: 24px;
+      margin-bottom: 20px;
+    }
+
+    &__logo-wrapper {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    &__logo {
+      width: 106px;
+      margin-bottom: 5px;
+    }
+
+    &__logo-text {
+      font-size: 14.5px;
+      font-weight: 800;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 0.48;
+      letter-spacing: normal;
+      text-align: left;
+      color: #000000;
+      text-transform: uppercase;
+    }
+
+    &__bottom-links {
+      display: flex;
+      flex-direction: column;
+      margin-left: 18px;
+      margin-top: -3px;
+    }
+
+    &__bottom-link {
+      font-size: 13.5px;
+      font-weight: 600;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 0.93;
+      letter-spacing: normal;
+      text-align: left;
+      color: #343434;
+      margin-bottom: 7px;
+      text-transform: uppercase;
+    }
+
+    &__sweet {
+      position: absolute;
+      bottom: 0;
+      right:0;
+      width: 51px;
+      height: 56px;
+      background-image: url(./images/advantages/sweet.png);
+      background-size: contain;
+      z-index: 1;
+    }
+
+    &__flower {
+      position: absolute;
+      width: 168px;
+      height: 170px;
+      left: -61px;
+      top: 37px;
+      background-image: url(./images/shops/flower.png);
+      background-repeat: no-repeat;
+      background-size: contain;
+      z-index: 1;
+      background-position: center;
+      transform: scale(-1, 1);
+    }
+
+    &__pillow {
+      right: -35px;
+      top: 33px;
+      width: 130px;
+      height: 123px;
+      z-index: 1;
+      background-image: url(./images/hero/pillow.png);
+      background-repeat: no-repeat;
+      background-size: contain;
+      bottom: unset;
+      position: absolute;
+    }
+  }
+}
+
+@media(max-width: 374px) {
+  body {
+    height: 100vh;
+  }
+
+  .app {
+    width: 375px;
+    transform: scale(0.8);
+    margin-left: -30px;
+    margin-top: -370px;
   }
 }
