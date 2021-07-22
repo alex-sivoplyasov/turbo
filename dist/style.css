@@ -503,7 +503,8 @@ div {
 
 .shops__category {
   border-radius: 15px;
-  background-color: #ffe038; }
+  background-color: #ffe038;
+  text-decoration: none; }
 
 .shops__categories {
   display: grid;
@@ -516,7 +517,9 @@ div {
   font-size: 30px;
   padding-top: 30px;
   font-weight: 600;
-  padding-left: 27px; }
+  padding-left: 27px;
+  color: #010101;
+  text-decoration: none; }
 
 .shops__category-1 {
   grid-area: item-1; }
@@ -791,17 +794,17 @@ div {
   font-size: 40px;
   padding-bottom: 10px; }
 
-#contacts__map .ymaps-2-1-78-controls__control {
+#contacts__map .ymaps-2-1-79-controls__control {
   inset: 108px 10px auto auto !important; }
 
-#contacts__map .ymaps-2-1-78-zoom {
+#contacts__map .ymaps-2-1-79-zoom {
   border-radius: 8px;
   width: 40px;
   height: 80px  !important;
   padding: 0;
   box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.2); }
 
-#contacts__map .ymaps-2-1-78-controls__control_toolbar {
+#contacts__map .ymaps-2-1-79-controls__control_toolbar {
   position: absolute !important;
   inset: 200px 10px auto auto;
   margin: 0;
@@ -809,9 +812,9 @@ div {
   box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.2);
   border-radius: 8px; }
 
-#contacts__map .ymaps-2-1-78-zoom__plus,
-#contacts__map .ymaps-2-1-78-zoom__minus,
-#contacts__map .ymaps-2-1-78-float-button {
+#contacts__map .ymaps-2-1-79-zoom__plus,
+#contacts__map .ymaps-2-1-79-zoom__minus,
+#contacts__map .ymaps-2-1-79-float-button {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -822,21 +825,21 @@ div {
   border: none;
   box-shadow: none; }
 
-#contacts__map .ymaps-2-1-78-zoom__minus {
+#contacts__map .ymaps-2-1-79-zoom__minus {
   border-radius: 0 0 8px 8px; }
 
-#contacts__map .ymaps-2-1-78-float-button {
+#contacts__map .ymaps-2-1-79-float-button {
   border-radius: 8px; }
 
-#contacts__map .ymaps-2-1-78-zoom__minus .ymaps-2-1-78-zoom__icon {
+#contacts__map .ymaps-2-1-79-zoom__minus .ymaps-2-1-79-zoom__icon {
   position: static;
   background-image: url(./images/icons/minus.svg); }
 
-#contacts__map .ymaps-2-1-78-zoom__plus .ymaps-2-1-78-zoom__icon {
+#contacts__map .ymaps-2-1-79-zoom__plus .ymaps-2-1-79-zoom__icon {
   position: static;
   background-image: url(./images/icons/plus.svg); }
 
-#contacts__map .ymaps-2-1-78-float-button-icon {
+#contacts__map .ymaps-2-1-79-float-button-icon {
   position: static;
   background-image: url(./images/icons/location.svg); }
 
@@ -1070,7 +1073,9 @@ div {
     width: 1920px;
     transform: scale(0.8);
     margin-left: -329px;
-    margin-top: -700px; } }
+    margin-top: -700px; }
+  .contacts__background-kettle {
+    display: none; } }
 
 @media (max-width: 1200px) {
   .app {
