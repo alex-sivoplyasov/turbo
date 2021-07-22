@@ -794,17 +794,17 @@ div {
   font-size: 40px;
   padding-bottom: 10px; }
 
-#contacts__map .ymaps-2-1-79-controls__control {
-  inset: 108px 10px auto auto !important; }
+#contacts__map ymaps [class*=controls__control] {
+  inset: 280px 10px auto auto !important; }
 
-#contacts__map .ymaps-2-1-79-zoom {
+#contacts__map ymaps [class*=zoom] {
   border-radius: 8px;
   width: 40px;
   height: 80px  !important;
   padding: 0;
   box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.2); }
 
-#contacts__map .ymaps-2-1-79-controls__control_toolbar {
+#contacts__map ymaps [class*=controls__control_toolbar] {
   position: absolute !important;
   inset: 200px 10px auto auto;
   margin: 0;
@@ -812,34 +812,40 @@ div {
   box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.2);
   border-radius: 8px; }
 
-#contacts__map .ymaps-2-1-79-zoom__plus,
-#contacts__map .ymaps-2-1-79-zoom__minus,
-#contacts__map .ymaps-2-1-79-float-button {
+#contacts__map ymaps [class*=zoom__plus],
+#contacts__map ymaps [class*=zoom__minus],
+#contacts__map ymaps [class*=float-button] {
   display: flex;
   align-items: center;
   justify-content: center;
   padding: 0;
   width: 40px;
-  height: 40px;
+  height: 40px !important;
   border-radius: 8px 8px 0 0;
   border: none;
   box-shadow: none; }
 
-#contacts__map .ymaps-2-1-79-zoom__minus {
-  border-radius: 0 0 8px 8px; }
-
-#contacts__map .ymaps-2-1-79-float-button {
+#contacts__map ymaps [class*=_hidden-text] {
+  position: absolute;
+  left: -40px;
+  top: 82px;
   border-radius: 8px; }
 
-#contacts__map .ymaps-2-1-79-zoom__minus .ymaps-2-1-79-zoom__icon {
+#contacts__map ymaps [class*=_hidden-text] [class*=float-button-text] {
+  display: none; }
+
+#contacts__map ymaps [class*=zoom__minus] {
+  border-radius: 0 0 8px 8px; }
+
+#contacts__map ymaps [class*=zoom__minus] [class*=zoom__icon] {
   position: static;
   background-image: url(./images/icons/minus.svg); }
 
-#contacts__map .ymaps-2-1-79-zoom__plus .ymaps-2-1-79-zoom__icon {
+#contacts__map ymaps [class*=zoom__plus] [class*=zoom__icon] {
   position: static;
   background-image: url(./images/icons/plus.svg); }
 
-#contacts__map .ymaps-2-1-79-float-button-icon {
+#contacts__map ymaps [class*=float-button-icon] {
   position: static;
   background-image: url(./images/icons/location.svg); }
 
@@ -1607,6 +1613,8 @@ div {
     font-size: 13.5px;
     margin-bottom: 7px;
     padding-bottom: 0; }
+  .contacts #contacts__map ymaps [class*=controls__control] {
+    inset: 105px 10px auto auto !important; }
   .contacts__background-clock, .contacts__background-green, .contacts__background-kettle {
     display: none; }
   .partners {
