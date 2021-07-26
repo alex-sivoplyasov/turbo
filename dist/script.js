@@ -103,11 +103,27 @@ Maska.create('.partners__phone')
 //Отправка сообщения
 const partnersButton = document.querySelector('.partners__button')
 const partnersPhone = document.querySelector('.partners__phone')
+const partnersMessage = document.querySelector('.partners__message')
 partnersButton.addEventListener('click', () => {
-  if (partnersPhone.value)
-    console.log('ffff', partnersPhone.value)
-  else
-    console.log('error')
-})
+  if(!partnersButton.classList.contains('disabled')) {
+    if (partnersPhone.value && partnersPhone.value.length === 18) {
+      partnersMessage.classList.remove('error')
+      partnersMessage.innerText = ''
+      partnersButton.classList.add('disabled')
 
-// console.log('width', window.)
+      const data = {
+        phone: partnersPhone
+      }
+
+      //Имитируем аякс отправку заявки, нужно заменить этот блок реальными данными
+      setTimeout( () => {
+        partnersMessage.innerText = 'Ваша заявка успешно отправлена'
+        partnersButton.classList.remove('disabled')
+        partnersPhone.value = ''
+      }, 3000)
+    } else {
+      partnersMessage.classList.add('error')
+      partnersMessage.innerText = 'Необходимо заполнить форму'
+    }
+  }
+})
