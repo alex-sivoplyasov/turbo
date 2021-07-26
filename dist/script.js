@@ -33,14 +33,16 @@ function init() {
     center: cities.mgn.coordinates,
     zoom: 15,
     controls: ['geolocationControl']
-  });
+  })
+
+  myMap.behaviors.disable('scrollZoom')
 
   var zoomControl = new ymaps.control.ZoomControl({
     options: {
       size: "small"
     }
   });
-  myMap.controls.add(zoomControl);
+  myMap.controls.add(zoomControl)
 
   const balloonContent = `
 	  <h3>Магазин "${cities.mgn.name}"</h3>
